@@ -24,9 +24,7 @@ var SPaginator = function(list, container, total, callBack, options){
 SPaginator.prototype = {
 
     _init: function(container) {
-        console.log(container);
         this.$container = $(container);
-        console.log(this.$container);
         this.current = this._options.page;
         this._pages =  Math.ceil(this.total/this._options.items_per_page);
         this.print();

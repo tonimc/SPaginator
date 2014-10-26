@@ -36,11 +36,11 @@ div.pagination ul li.gradient:hover {
 }
 
 div.pagination ul li.active {
-    border: none;
+    border: solid 1px #ffffff;
     padding: 4px 12px 4px 12px;
     background: #616161;
-    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
     color: #f0f0f0;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .8);
     text-shadow: 0px 0px 3px rgba(0,0,0, .5);
 }
 
@@ -56,54 +56,3 @@ div.pagination ul li a
     padding: 4px 12px 4px 12px;
     text-decoration: none;
 }
-
-
-/*
-div.pagination
-{
-    text-align: center;
-}
-
-div.pagination ul
-{
-    list-style: none;
-    display: inline-block;
-}
-
-div.pagination ul li
-{
-    float: left;
-    display: block;
-    font-size: 12px;
-
-    background: url("/images/ui-bg_glass.png") repeat-x scroll 50% 50% #D7EBF9;
-    border: 1px solid #AED0EA;
-    color: #2779AA;
-
-}
-
-div.pagination ul li.active
-{
-    font-weight: bold;
-    padding: 4px 12px 4px 12px;
-    background: url("/images/ui-bg_highlight.png") repeat-x scroll 50% top #FFE45C;
-    border: 1px solid #FED22F;
-    color: #363636;
-}
-
-div.pagination ul li.text
-{
-    padding: 4px 12px 4px 12px;
-}
-
-div.pagination ul a
-{
-    display: block;
-    padding: 4px 12px 4px 12px;
-    color: #2779AA;
-}
-
-div.pagination ul a:hover
-{
-    color: #C77405;
-}*/
