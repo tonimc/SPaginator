@@ -1,7 +1,12 @@
-/*!
- * Implementation of a paginator object
+/**
+ * @class SPaginator component
+ * @param {Object} list Object of the list tha is paginated
+ * @param {string} selector Selector of the paginator 
+ * @param {number} total
+ * @callback  callBack
+ * @param {Object} options
  */
-var SPaginator = function(list, container, total, callBack, options){
+var SPaginator = function(list, selector, total, callBack, options){
     this.list = list;
     this.$container = null;
     this.current = 1;
@@ -18,7 +23,7 @@ var SPaginator = function(list, container, total, callBack, options){
 
     this._callBack = callBack;
 
-    this._init(container);
+    this._init(selector);
 }
 
 SPaginator.prototype = {
