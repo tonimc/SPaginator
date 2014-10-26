@@ -42,4 +42,4 @@ var cPaginator2 = new SPaginator(
 
 
 You can see many examples at examples folder.
-To see one of then at this link: 
+To see one of then at this link: [Examples](examples/paginator.html)
