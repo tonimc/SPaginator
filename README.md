@@ -3,8 +3,6 @@ SPaginator
 
 SPaginator - Very simple paginator in JS
 
-## SPaginator is a simple component to create an pagintor
-
 SPaginator is very simple to add to your components like lists, grids......
 
 You can configurate:
