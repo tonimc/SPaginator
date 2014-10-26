@@ -2,9 +2,9 @@
  * @class SPaginator component
  * @param {Object} list Object of the list tha is paginated
  * @param {string} selector Selector of the paginator 
- * @param {number} total
- * @callback  callBack
- * @param {Object} options
+ * @param {number} total Total of items
+ * @callback  callBack Function to call when is cliked on a page to refresh the list
+ * @param {Object} options Configurable options
  */
 var SPaginator = function(list, selector, total, callBack, options){
     this.list = list;
