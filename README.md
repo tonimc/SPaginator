@@ -11,7 +11,7 @@ You can configurate:
 * Very confugurable, you can:
 	* Specificate items for page
 	* number of pages to display on list
-** Label texts
+	* Label texts
 
 ## Component
 
