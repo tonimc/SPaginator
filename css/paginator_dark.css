@@ -1,0 +1,54 @@
+
+div.pagination {
+    text-align: center;
+    padding: 20px;
+}
+
+div.pagination ul
+{
+    list-style: none;
+    display: inline-block;
+}
+
+div.pagination ul li {
+    float: left;
+    display: block;
+    margin-right: 4px;
+    border-radius: 3px;
+    border: solid 1px #32373b;
+    background: #3e4347;
+    box-shadow: inset 0px 1px 1px rgba(255,255,255, .1), 0px 1px 3px rgba(0,0,0, .1);
+    font-size: .875em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #feffff;
+    text-shadow: 0px 1px 0px rgba(0,0,0, .5);
+
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#565b5f), to(#3e4347));
+    background: -moz-linear-gradient(0% 0% 270deg,#565b5f, #3e4347);
+}
+
+div.pagination ul li:hover {
+    background: #3d4f5d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#547085), to(#3d4f5d));
+    background: -moz-linear-gradient(0% 0% 270deg,#547085, #3d4f5d);
+}
+
+div.pagination ul li.active {
+    padding: 4px 12px 4px 12px;
+    background: #2f3237;
+    box-shadow: inset 0px 0px 8px rgba(0,0,0, .5), 0px 1px 0px rgba(255,255,255, .1);
+}
+
+div.pagination ul li.text
+{
+    padding: 4px 12px 4px 12px;
+}
+
+div.pagination ul li a
+{
+    display: block;
+    color: #feffff;
+    padding: 4px 12px 4px 12px;
+    text-decoration: none;
+}

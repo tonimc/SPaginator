@@ -28,8 +28,7 @@ div.pagination ul li {
     background: -moz-linear-gradient(0% 0% 270deg,#f8f8f8, #e9e9e9);
 }
 
-div.pagination ul li:hover, 
-div.pagination ul li.gradient:hover {
+div.pagination ul li:hover {
     background: #fefefe;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FEFEFE), to(#f0f0f0));
     background: -moz-linear-gradient(0% 0% 270deg,#FEFEFE, #f0f0f0);
