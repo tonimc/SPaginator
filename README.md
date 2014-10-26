@@ -3,7 +3,7 @@ SPaginator
 
 SPaginator - Very simple paginator in JS
 
-# SPaginator is a simple component to create an pagintor
+## SPaginator is a simple component to create an pagintor
 
 SPaginator is very simple to add to your components like lists, grids......
 
@@ -15,7 +15,7 @@ You can configurate:
 	* number of pages to display on list
 ** Label texts
 
-# Component
+## Component
 
 ```
 /**
@@ -30,7 +30,7 @@ function(list, container, total, callBack, options){
 }
 ```
 
-# Example
+## Example
 
 ```
 var cPaginator2 = new SPaginator(
