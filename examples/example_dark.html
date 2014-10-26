@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/paginator_dark.css">
+
+</head>
+<body>
+	<div id="pagination1" class="pagination"></div>
+	<div id="pagination2" class="pagination"></div>
+
+    <div>
+        <div id="list"> Any list</div>
+        <div class="pagination"></div>
+    </div>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js" ></script>
+    <script type="text/javascript" src="../paginator.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var cPaginator = new SPaginator(
+            null,
+            '#pagination1',
+            11,
+            function (page) { console.log("Call function to load " + page); },
+            {}
+        );
+        var cPaginator2 = new SPaginator(
+            null,
+            '#pagination2',
+            112,
+            function (page) { console.log("Call function to load " + page); },
+            { items_per_page: 3 }
+        );
+
+        var cPaginator3 = new SPaginator(
+            null,
+            '#list + div.pagination',
+            1123,
+            function (page) { console.log("Call function to load " + page); },
+            { display: 3 }
+        );
+    });
+    </script>
+</body>
+</html>
