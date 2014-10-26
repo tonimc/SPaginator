@@ -1,0 +1,34 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="paginator.css">
+
+
+	<script type="text/javascript" src="jquery-2.1.1.min.js" ></script>
+	<script type="text/javascript" src="paginator.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		var cPaginator = new SPaginator(
+            null,
+            '#pagination',
+            34,
+            function (page) { console.log(page); },
+            {}
+        );
+        var cPaginator2 = new SPaginator(
+            null,
+            '.pagination2',
+            34,
+            function (page) { console.log("class " + page); },
+            { items_per_page: 3 }
+        );
+	});
+	</script>
+
+</head>
+<body>
+	<div class="pagination2 pagination"></div>
+	<div id="pagination" class="pagination"></div>
+</body>
+</html>
