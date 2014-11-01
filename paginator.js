@@ -128,7 +128,8 @@ SPaginator.prototype = {
             return '<li><a data-page="'+type+'" href="#">'+this._options[label]+'</a></li>';
         }
     },
-
+    
+    /*jslint evil: true */
     _initClickEvent: function() {
         var _self = this;
 
