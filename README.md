@@ -1,6 +1,8 @@
 SPaginator
 ==========
 
+[![Build Status](https://travis-ci.org/tonimc/SPaginator.svg?branch=master)](https://travis-ci.org/tonimc/SPaginator)
+
 SPaginator - Very simple paginator in JS based on jQuery
 
 SPaginator is very simple to add to your components like lists, grids......
