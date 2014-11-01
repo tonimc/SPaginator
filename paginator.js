@@ -24,7 +24,7 @@ function SPaginator(list, selector, total, callBack, options){
     this._callBack = callBack;
 
     this._init(selector);
-};
+}
 
 SPaginator.prototype = {
 
@@ -67,8 +67,7 @@ SPaginator.prototype = {
             for (i = 1; i <= end; i++) {
                 $list.append(this.printPage(i));
             }
-            if (this._options.halfDisplay < interval.start
-                && (interval.start - this._options.halfDisplay > 1)) {
+            if (this._options.halfDisplay < interval.start && (interval.start - this._options.halfDisplay > 1)) {
                 $list.append(this.printText('...'));
             }
         }
@@ -79,8 +78,7 @@ SPaginator.prototype = {
         }
 
         if (interval.end < this._pages && this._options.halfDisplay > 0) {
-            if ((this._pages - this._options.halfDisplay > interval.end)
-                && (this._pages - this._options.halfDisplay - interval.end > 0)) {
+            if ((this._pages - this._options.halfDisplay > interval.end) && (this._pages - this._options.halfDisplay - interval.end > 0)) {
                 $list.append(this.printText('...'));
             }
             var begin = Math.max(this._pages - this._options.halfDisplay, interval.end)+1;
