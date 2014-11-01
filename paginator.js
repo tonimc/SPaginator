@@ -6,11 +6,11 @@
  * @callback  callBack Function to call when is cliked on a page to refresh the list
  * @param {Object} options Configurable options
  */
-var SPaginator = function(list, selector, total, callBack, options){
+function SPaginator(list, selector, total, callBack, options){
     this.list = list;
     this.$container = null;
     this.current = 1;
-    this.total = parseInt(total);
+    this.total = parseInt(total, 10);
     this._pages = null;
     this._options =$.extend({
         items_per_page: 10,
@@ -24,7 +24,7 @@ var SPaginator = function(list, selector, total, callBack, options){
     this._callBack = callBack;
 
     this._init(selector);
-}
+};
 
 SPaginator.prototype = {
 
@@ -53,7 +53,7 @@ SPaginator.prototype = {
 
     print: function() {
         var $list = $('<ul></ul>'),
-            i = 1
+            i = 1,
             interval = this._getInterval();
 
         this.$container.empty();
@@ -68,7 +68,7 @@ SPaginator.prototype = {
                 $list.append(this.printPage(i));
             }
             if (this._options.halfDisplay < interval.start
-                    && (interval.start - this._options.halfDisplay > 1)) {
+                && (interval.start - this._options.halfDisplay > 1)) {
                 $list.append(this.printText('...'));
             }
         }
@@ -80,7 +80,7 @@ SPaginator.prototype = {
 
         if (interval.end < this._pages && this._options.halfDisplay > 0) {
             if ((this._pages - this._options.halfDisplay > interval.end)
-                    && (this._pages - this._options.halfDisplay - interval.end > 0)) {
+                && (this._pages - this._options.halfDisplay - interval.end > 0)) {
                 $list.append(this.printText('...'));
             }
             var begin = Math.max(this._pages - this._options.halfDisplay, interval.end)+1;
@@ -161,5 +161,4 @@ SPaginator.prototype = {
             _self.print();
         });
     }
-
-}
+};
