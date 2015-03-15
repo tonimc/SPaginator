@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Spaginator by tonimc</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Spaginator</h1>
+        <p>SPaginator - Very simple paginator in JS</p>
+
+        <p class="view"><a href="https://github.com/tonimc/SPaginator">View the Project on GitHub <small>tonimc/SPaginator</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/tonimc/SPaginator/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tonimc/SPaginator/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tonimc/SPaginator">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="spaginator" class="anchor" href="#spaginator" aria-hidden="true"><span class="octicon octicon-link"></span></a>SPaginator</h1>
+
+<p><a href="https://travis-ci.org/tonimc/SPaginator"><img src="https://travis-ci.org/tonimc/SPaginator.svg?branch=master" alt="Build Status"></a></p>
+
+<p>SPaginator - Very simple paginator in JS based on jQuery</p>
+
+<p>SPaginator is very simple to add to your components like lists, grids......</p>
+
+<p>You can configurate:</p>
+
+<ul>
+<li>Callback fuction to every page click</li>
+<li>Very confugurable, you can:
+
+<ul>
+<li>Specificate items for page</li>
+<li>number of pages to display on list</li>
+<li>Label texts</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="component" class="anchor" href="#component" aria-hidden="true"><span class="octicon octicon-link"></span></a>Component</h2>
+
+<pre><code>/**
+ * @class SPaginator component
+ * @param {Object} list Object of the list tha is paginated
+ * @param {string} selector Selector of the paginator 
+ * @param {number} total Total of items
+ * @callback  callBack Function to call when is cliked on a page to refresh the list
+ * @param {Object} options Configurable options
+ */
+function(list, container, total, callBack, options){
+}
+</code></pre>
+
+<h2>
+<a id="example" class="anchor" href="#example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example</h2>
+
+<pre><code>var cPaginator2 = new SPaginator(
+    null,
+    '#pagination2',
+    112,
+    function (page) { console.log("Call function to load " + page); },
+    { items_per_page: 3 }
+);
+</code></pre>
+
+<p>You can see many examples at examples folder.
+To see one of then at this link: <a href="examples/example.html">Examples</a></p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/tonimc">tonimc</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
